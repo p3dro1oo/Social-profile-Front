@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 8%);
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 65%;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img{
+    width: 5em;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+main h1{
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 0;
+    margin-top: 1em;
+}
+
+main h2{
+    color: hsl(75, 94%, 57%);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    margin-top: .5em;
+}
+
+main p{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 2em;
+}
+
+main ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+main ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    background-color: hsl(0, 0%, 20%);
+    width: 85%;
+    height: 3em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main ul li:hover{
+    background-color: hsl(75, 94%, 57%);
+    
+}
+
+main ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul li a:hover{
+    color: black;
+}
+
+.attribution{
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    margin-top: 2em;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(75, 94%, 57%);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.attribution a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 768px) {
+    main {
+        height: auto;
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    main h2 {
+        font-size: 14px;
+    }
+
+    main p {
+        font-size: 12px;
+        margin-top: 1.5em;
+    }
+
+    main ul li {
+        width: 90%;
+        height: 2.5em;
+    }
+
+    main ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+        height: auto;
+    }
+
+    main img {
+        width: 4em;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        font-size: 12px;
+    }
+
+    main p {
+        font-size: 10px;
+        margin-top: 1em;
+    }
+
+    main ul li {
+        width: 100%;
+        height: 2em;
+    }
+
+    main ul li a {
+        font-size: 10px;
+    }
+
+    .attribution {
+        font-size: 10px;
+        margin-top: 1em;
+    }
+}
